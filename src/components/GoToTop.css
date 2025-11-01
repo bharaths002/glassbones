@@ -1,0 +1,39 @@
+.go-to-top-button {
+  position: fixed; /* Keep the button in a fixed position on the screen */
+  bottom: 20px;
+  right: 50px;
+  font-size: 1.7rem; /* Reduced font size for a smaller icon */
+  padding: 9px 16px; /* Reduced padding to make the button smaller */
+  background-color: #0056b3; /* Match your footer color */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Changed to a small pixel value for a square with cut edges */
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is on top of other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.go-to-top-button:hover {
+  opacity: 1;
+}
+.go-to-top-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+/* Add this responsive section at the end of the file */
+@media (max-width: 768px) {
+  .go-to-top {
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .go-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
