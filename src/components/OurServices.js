@@ -12,7 +12,7 @@ const servicesData = [
       "Participation in global book fairs (CIBF, SIBF, NDWIBF, Frankfurt)",
       "Maintain tone, style, and context"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Editing & Proofreading",
@@ -23,7 +23,7 @@ const servicesData = [
       "Consistency and formatting",
       "Publishing-ready content"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Manuscript Preparation & Publishing Consulting",
@@ -34,7 +34,7 @@ const servicesData = [
       "Design and ISBN guidance",
       "Distribution planning"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Subtitle Writing & Editing",
@@ -45,7 +45,7 @@ const servicesData = [
       "Indian (Tamil, Telugu, Malayalam, Kannada, Hindi) & International (German, French, Japanese)",
       "Storytelling rhythm & clarity"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Script Translation (Films, Series, Documentaries)",
@@ -56,7 +56,7 @@ const servicesData = [
       "Preserve creative tone & intent",
       "Multilingual script support"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Social Media Management & Branding",
@@ -67,7 +67,7 @@ const servicesData = [
       "Audience engagement & analysis",
       "Event & campaign management"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Content Strategy for Authors & Artists",
@@ -78,7 +78,7 @@ const servicesData = [
       "Growth-oriented planning",
       "Content curation & posting"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   },
   {
     title: "Strategic SEO & Performance Marketing",
@@ -89,7 +89,7 @@ const servicesData = [
       "Social media campaigns",
       "Paid Ads (PMax, Google, Meta)"
     ],
-    image: "/deliverables.png" // 👈 background icon
+    image: process.env.PUBLIC_URL + "/write.png" // Updated to write.png
   }
 ];
 
@@ -105,6 +105,19 @@ const Services = () => {
   const handleMouseLeave = (index) => {
     const updated = [...flipped];
     updated[index] = false;
+    setFlipped(updated);
+  };
+  
+  // Add touch event handler for mobile
+  const handleTouch = (index) => {
+    const updated = [...flipped];
+    updated[index] = !updated[index]; // Toggle the flipped state on touch
+    setFlipped(updated);
+  };
+
+  const handleTouchBack = (index) => {
+    const updated = [...flipped];
+    updated[index] = false; // Flip to front when back side is touched
     setFlipped(updated);
   };
 
@@ -128,7 +141,7 @@ const Services = () => {
             </div>
 
             {/* Back Side with background image */}
-            <div className="card-back">
+            <div className="card-back" onTouchStart={() => handleTouchBack(index)}>
               {/* Background Icon */}
               <img src={service.image} alt="Deliverables Icon" className="back-icon" />
 
@@ -147,8 +160,10 @@ const Services = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Services;
+
+
 
 

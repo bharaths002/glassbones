@@ -1,15 +1,15 @@
 import "./Contact.css";
 import React from "react";
-import { FaWhatsapp, FaInstagram, FaYoutube, FaPhone } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaYoutube, FaPhone, FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
   return (
     <section
       id="contact-us"
-      className="min-h-screen bg-blue-500 text-white p-8"
+      className="bg-blue-500 text-white p-6 md:p-8 md:min-h-screen"
     >
-      <div className="flex flex-col items-center justify-center h-full max-w-4xl mx-auto space-y-8">
+      <div className="flex flex-col items-center md:justify-center max-w-4xl mx-auto space-y-6 md:space-y-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center">
           Get in Touch
         </h2>
@@ -75,7 +75,7 @@ function Contact() {
               <ul className="example-2 flex">
                 <li className="icon-content">
                   <a
-                    href="https://wa.me/yourphonenumber"
+                    href="https://wa.me/+919360460661"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-social="whatsapp"
@@ -87,7 +87,7 @@ function Contact() {
 
                 <li className="icon-content">
                   <a
-                    href="https://instagram.com/yourprofile"
+                    href="https://www.instagram.com/glassbonescreatives?igsh=OHFxODk3a3Y0aGg4"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-social="instagram"
@@ -125,6 +125,12 @@ function Contact() {
                   <a href="tel:+91 9360460661" data-social="phone">
                     <div className="filled"></div>
                     <FaPhone className="invert-phone" />
+                  </a>
+                </li>
+                <li className="icon-content">
+                  <a href="https://www.facebook.com/share/16a7YRxe5R/" data-social="facebook">
+                    <div className="filled"></div>
+                    <FaFacebook />
                   </a>
                 </li>
               </ul>

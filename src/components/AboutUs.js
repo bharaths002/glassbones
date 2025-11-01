@@ -23,7 +23,7 @@ function AboutUs() {
             <p>To build a vibrant literary community where every story is celebrated 
               and every writer is empowered. We envision a world where creative voices 
               thrive and art is accessible to all.</p>
-            <div className="cover" style={{backgroundImage: "url('/write1.jpg')"}}>
+            <div className="cover" style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/write1.jpg'})`}}>
               <p>Our Vision</p>
             </div>
           </div>
@@ -35,7 +35,7 @@ function AboutUs() {
             <p>We champion creativity, respect, and open dialogue, believing that literature 
               thrives on diverse perspectives and shared passions. Our community is built 
               on mutual support and a commitment to excellence.</p>
-            <div className="cover" style={{backgroundImage: "url('/publish1.jpg')"}}>
+            <div className="cover" style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/publish1.jpg'})`}}>
               <p>Our Values</p>
             </div>
           </div>
@@ -47,7 +47,7 @@ function AboutUs() {
             <p>To foster a love for reading and writing by providing a platform for authors 
               to share their work and for readers to discover new voices. We are committed 
               to connecting storytellers and audiences globally.</p>
-            <div className="cover" style={{backgroundImage: "url('/translate1.jpg')"}}>
+            <div className="cover" style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/translate1.jpg'})`}}>
               <p>Our Mission</p>
             </div>
           </div>
@@ -56,5 +56,7 @@ function AboutUs() {
     </section>
   );
 }
+
+
 
 export default AboutUs;

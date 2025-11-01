@@ -199,17 +199,22 @@
     text-align: center;
   }
   
-  .book {
-    width: 250px;
-    height: 350px;
+  .card1, .image-container {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .card1 {
+    min-height: 200px;
+    padding: 20px 20px;
   }
   
-  .book p {
-    font-size: 16px;
+  .card1 h3 {
+    font-size: 1.5rem;
   }
   
-  .cover p {
-    font-size: 20px;
+  .card1 p {
+    font-size: 1rem;
   }
 }
 
@@ -220,19 +225,6 @@
   
   .about-us-title h2 {
     font-size: 2.5rem;
-  }
-  
-  .book {
-    width: 220px;
-    height: 320px;
-  }
-  
-  .book p {
-    font-size: 14px;
-  }
-  
-  .cover p {
-    font-size: 18px;
   }
 }.about-us {
   padding: 80px 40px;
@@ -525,64 +517,27 @@
 }
 
 @media (max-width: 768px) {
-  .about-us {
-    padding: 60px 20px;
-  }
-  
   .about-us-header {
-    flex-direction: column;
-  }
-  
-  .about-us-title {
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-title h2 {
-    font-size: 3rem;
-  }
-  
-  .about-divider {
-    width: 80%;
-    height: 1px;
-    margin: 20px auto;
-    min-height: auto;
-  }
-  
-  .about-us-description {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .card1, .image-container {
-    width: 80%;
-    max-width: 350px;
+    align-items: center !important;
   }
 
-  .card1 {
-    min-height: 200px;
-    padding: 20px 20px;
+  .about-us-title {
+    width: 100% !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
   }
-  
-  .card1 h3 {
-    font-size: 1.5rem;
-  }
-  
-  .card1 p {
-    font-size: 1rem;
+
+  .about-us-title h2 {
+    text-align: center !important;
+    margin: 0 auto !important;
   }
 }
 
 @media (max-width: 480px) {
-  .about-us {
-    padding: 40px 15px;
-  }
-  
-  .about-us-title h2 {
-    font-size: 2.5rem;
+  .about-us-title {
+    padding-top: 10px !important;
   }
 }
 
