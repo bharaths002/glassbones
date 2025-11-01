@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/glassbones/static/css/main.2ab24e0d.css",
-    "main.js": "/glassbones/static/js/main.4e2aeea8.js",
+    "main.css": "/glassbones/static/css/main.1cd8a4e0.css",
+    "main.js": "/glassbones/static/js/main.da26d721.js",
     "index.html": "/glassbones/index.html",
-    "main.2ab24e0d.css.map": "/glassbones/static/css/main.2ab24e0d.css.map",
-    "main.4e2aeea8.js.map": "/glassbones/static/js/main.4e2aeea8.js.map"
+    "main.1cd8a4e0.css.map": "/glassbones/static/css/main.1cd8a4e0.css.map",
+    "main.da26d721.js.map": "/glassbones/static/js/main.da26d721.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ab24e0d.css",
-    "static/js/main.4e2aeea8.js"
+    "static/css/main.1cd8a4e0.css",
+    "static/js/main.da26d721.js"
   ]
 }
