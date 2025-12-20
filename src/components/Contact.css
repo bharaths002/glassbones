@@ -169,3 +169,28 @@ ul {
     padding: 10px;
   }
 }
+
+/* Success message */
+.success-message {
+  color: #16a34a;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Disabled button */
+button:disabled {
+  opacity: 0.8;
+}

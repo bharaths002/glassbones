@@ -10,28 +10,11 @@ function Navbar() {
 
   return (
     <>
-      {/* 📌 Top Banner */}
-      <div className="top-banner">
-        <div className="banner-item">
-          <a href="mailto:glassbonescreative@gmail.com">
-            glassbonescreative@gmail.com
-          </a>
-        </div>
-        <span className="banner-separator">|</span>
-        <div className="banner-item">
-          <span>120 Vellakulam, Kilambakkam Post, Tiruvallur - 602 025</span>
-        </div>
-        <span className="banner-separator">|</span>
-        <div className="banner-item">
-          <a href="tel:+919360460661">+91 93604 60661</a>
-        </div>
-      </div>
-
       {/* 📌 Navigation Bar */}
       <nav className="navbar">
         <div className="navbar-brand">
           <img
-            src={process.env.PUBLIC_URL + "/gcnlogonobg.png"}
+            src={process.env.PUBLIC_URL + "/gcnlogo.svg"}
             alt="Glassbones Logo"
             className="navbar-logo-img"
           />

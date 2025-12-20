@@ -109,11 +109,11 @@ const Services = () => {
   };
   
   // Add touch event handler for mobile
-  const handleTouch = (index) => {
-    const updated = [...flipped];
-    updated[index] = !updated[index]; // Toggle the flipped state on touch
-    setFlipped(updated);
-  };
+  // const handleTouch = (index) => {
+  //   const updated = [...flipped];
+  //   updated[index] = !updated[index]; // Toggle the flipped state on touch
+  //   setFlipped(updated);
+  // };
 
   const handleTouchBack = (index) => {
     const updated = [...flipped];
